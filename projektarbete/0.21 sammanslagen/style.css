@@ -328,7 +328,7 @@ body {
 .float-menu {
     background-color: #f1f1f1;
     grid-area: menu;
-    border-right:black 2px solid;
+    border-right:black 1px solid;
 }
 .float-menu-list {
     list-style-type: none;
