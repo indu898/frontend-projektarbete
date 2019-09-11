@@ -29,24 +29,24 @@ let mqls = [
 
 function mediaqueryresponse(mql) {
     if (mqls[0].matches) {
-        let element = document.getElementById("floatH1");
-        element.innerHTML = "Float (över 1200px)";
+        let element = document.getElementById("h1");
+        element.innerHTML = "> 1200px";
     }
     if (mqls[1].matches) {
-        let element = document.getElementById("floatH1");
-        element.innerHTML = "Float (992-1200px)";
+        let element = document.getElementById("h1");
+        element.innerHTML = "992-1200px";
     }
     if (mqls[2].matches) {
-        let element = document.getElementById("floatH1");
-        element.innerHTML = "Float (768-992px)";
+        let element = document.getElementById("h1");
+        element.innerHTML = "768-992px";
     }
     if (mqls[3].matches) {
-        let element = document.getElementById("floatH1");
-        element.innerHTML = "Float (576-768px)";
+        let element = document.getElementById("h1");
+        element.innerHTML = "576-768p";
     }
     if (mqls[4].matches) {
-        let element = document.getElementById("floatH1");
-        element.innerHTML = "Float (under 576px)";
+        let element = document.getElementById("h1");
+        element.innerHTML = "< 576px";
     }
 }
 for (let i = 0; i < mqls.length; i++) {
