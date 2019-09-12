@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body id="body1">
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu-list-item">
+                <p><strong>Float till Grid</strong></p>
+            </li>
+            <li class="menu-list-item"><a class="menu-list-link active-menu" href="index.html">Float</a>
+            </li>
+            <li class="menu-list-item"><a class="menu-list-link" href="flex.html">Flex</a></li>
+            <li class="menu-list-item"><a class="menu-list-link" href="grid.html">Grid</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 id="h1">Our header</h1>
+    </header>
+    <main class="float-main">
+        <p class="float-subject-one">Netscape 2002</p>
+        <p class="float-subject-two">Användning</p>
+        <div class="clear-fix"></div>
+        <p class="float-subject-three">Problem</p>
+        <p class="float-subject-four">Illustrera</p>
+        <div class="clear-fix"></div>
+        <p class="main-text">Float introducerades i Netscape 1.1 år 2002. Det togs fram för att kunna för att flyta text runt en bild. Float i samverkan med div-boxar börjades användas för att skapa sin layout. Innan float använda man tables. När designers insåg möjligheterna
+            med floats började man använda det för att bygga hela sin sidas layout. Det var aldrig ändamålet men det funkade bra under långt tid.</p>
+
+        <p class="main-text">Problemet med floats är att man måste använda sig av extra markup i sin html och extra kod i din css om du vill floata saker efter varandra. En bild som ligger floatad med text kan sticka ut ur sin container. Det är inte en bugg. Det är så det
+            var tänkt. Att folk använde float som layoutverktyg är något som bara hände.</p>
+
+        <p class="main-text"> Så tricket är att skapa boxar med fast bredd floata dom som man vill. Om man vill floata mer saker efteråt så läggar man till en 'div class=clear'-box och ger stylar den med en “clearfix”. Man kan också sätta bredden på sina floatade objekt på
+            över 50% vilket tvingar dom att hamna under varandra. Att använda floats som sitt huvudsakliga layoutverktyg skapar onödig kod i markup och css. Float för layout är ett hack.</p>
+    </main>
+    <footer class="footer">
+        <p>Kick Ass Footer</p>
+    </footer>
+    <!-- <img id="img" class="aside-image aside" src="images/float5.png" alt="">
+    <img id="img2" class="aside-image2 aside" src="images/float5.png" alt="">-->
+    <script src="indeximg.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
