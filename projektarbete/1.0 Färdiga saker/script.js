@@ -1,3 +1,4 @@
+//Kollar width på sidan och ändrar h1 vid valda breakpoints
 let mqli = [
     window.matchMedia("(min-width: 1200px)"),
     window.matchMedia("(min-width: 992px) and (max-width: 1199.999px)"),
@@ -29,6 +30,6 @@ function responsiveHeader() {
     }
 }
 for (let i = 0; i < mqli.length; i++) {
-    responsiveHeader(mqli[i]) // call listener function explicitly at run time
-    mqli[i].addListener(responsiveHeader) // attach listener function to listen in on state changes
+    responsiveHeader(mqli[i])
+    mqli[i].addListener(responsiveHeader) // Känner av när width ändras
 }
