@@ -12,7 +12,6 @@
         background-color: #f1f1f1;
         border-bottom: 1px solid black;
     }
-
     .menu-list-item {
         float: left;
     }
@@ -24,7 +23,6 @@
         max-height: fit-content;
         margin-top: 2px;
     }
-
     .active-menu {
         background-color: aquamarine;
         border-right: #000 1px solid;
@@ -35,24 +33,10 @@
         margin-top: 1rem;
     }
 
-    /*HEADER*/
-    .header {
-        grid-area: header;
-        background-color: dimgray;
-        border-bottom: 1px solid black;
-        text-align: center;
-    }
     /*MAIN*/
     .main {
         grid-area: main;
         background-color: #555;
-    }
-    /*FOOTER*/
-    .footer {
-        grid-area: footer;
-        background-color: dimgray;
-        border-top: 1px solid black;
-        text-align: center;
     }
     .float-subject-one {
         width: 80%;
@@ -167,25 +151,10 @@
         text-align: center;
         margin-top: 1rem;
     }
-
-    /*HEADER*/
-    .header {
-        grid-area: header;
-        background-color: dimgray;
-        border-bottom: 1px solid black;
-        text-align: center;
-    }
     /*MAIN*/
     .float-main {
         grid-area: main;
         background-color: ghostwhite;
-        text-align: center;
-    }
-    /*FOOTER*/
-    .footer {
-        grid-area: footer;
-        background-color: dimgray;
-        border-top: 1px solid black;
         text-align: center;
     }
     .float-subject-one {
@@ -303,24 +272,9 @@
         text-align: center;
         margin-top: 1rem;
     }
- 
-    /*HEADER*/
-    .header {
-        grid-area: header;
-        background-color: dimgray;
-        border-bottom: 1px solid black;
-        text-align: center;
-    }
     /*MAIN*/
     .float-main {
         grid-area: main;
-    }
-    /*FOOTER*/
-    .footer {
-        grid-area: footer;
-        background-color: dimgray;
-        border-top: 1px solid black;
-        text-align: center;
     }
     .float-subject-one {
         float: left;
@@ -449,23 +403,9 @@
         color: #eee;
         padding: 20px;
     }
-    /*HEADER*/
-    .header {
-        grid-area: header;
-        background-color: dimgray;
-        border-bottom: 1px solid black;
-        text-align: center;
-    }
     /*MAIN*/
     .float-main {
         grid-area: main;
-    }
-    /*FOOTER*/
-    .footer {
-        grid-area: footer;
-        background-color: dimgray;
-        border-top: 1px solid black;
-        text-align: center;
     }
     .float-subject-one {
         float: left;
@@ -577,26 +517,11 @@
         text-align: center;
         margin-top: 1rem;
     }
-
-    /*HEADER*/
-    .header {
-        grid-area: header;
-        background-color: dimgray;
-        border-bottom: 1px solid black;
-        text-align: center;
-    }
     /*MAIN*/
     .main {
         grid-area: main;
         background-color: #555;
         ;
-    }
-    /*FOOTER*/
-    .footer {
-        grid-area: footer;
-        background-color: dimgray;
-        border-top: 1px solid black;
-        text-align: center
     }
     .float-subject-one {
         float: left;
@@ -733,11 +658,31 @@ body {
     margin: auto;
 }
 
-
 /*Generell styling*/
+
 .subject-style {
-    background: aquamarine;
-    color: #000;
+    background: rgb(10, 34, 0);
+    color: rgb(50, 177, 0);
+    border: 2px solid black;
+    border-radius: 15px;
     padding: 50px;
     text-align: center;
+}
+/*FOOTER*/
+.footer {
+display: flex;
+grid-area: footer;
+background-color: dimgray;
+border-top: 1px solid black;
+text-align: center;
+align-items: center;
+justify-content: center;
+
+}
+/*HEADER*/
+.header {
+grid-area: header;
+background-color: dimgray;
+border-bottom: 1px solid black;
+text-align: center;
 }
