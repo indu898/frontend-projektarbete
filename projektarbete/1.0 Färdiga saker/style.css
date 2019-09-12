@@ -1,0 +1,948 @@
+@media (max-width: 575.999px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-rows: 64px 52px auto 52px;
+        grid-template-areas: "menu" "header" "main" "footer";
+        min-height: 100vh;
+    }
+    /*MENU*/
+    .menu {
+        grid-area: menu;
+        background-color: #f1f1f1;
+        border-bottom: 1px solid black;
+    }
+
+    .menu-list-item {
+        float: left;
+    }
+    .menu-list-link {
+        display: block;
+        color: #000;
+        padding: 18px 16px;
+        text-decoration: none;
+        max-height: fit-content;
+        margin-top: 2px;
+    }
+
+    .active-menu {
+        background-color: aquamarine;
+        border-right: #000 1px solid;
+        border-left: black 1px solid;
+    }
+    .menu-list p {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    /*HEADER*/
+    .header {
+        grid-area: header;
+        background-color: dimgray;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    /*MAIN*/
+    .main {
+        grid-area: main;
+        background-color: #555;
+    }
+    /*FOOTER*/
+    .footer {
+        grid-area: footer;
+        background-color: dimgray;
+        border-top: 1px solid black;
+        text-align: center;
+    }
+    .float-subject-one {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .float-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .float-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .float-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .flex-subjects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-subject-one {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .flex-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .flex-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .flex-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .grid-main {
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        display: grid;
+        grid-area: main;
+        background: #555;
+        color: #eee;
+        padding: 20px;
+        justify-items: center;
+        row-gap: 16px;
+    }
+    .grid-subject-one {
+        padding: 50px;
+        background: rgb(145, 255, 218);
+        color: #000;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .grid-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .grid-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .grid-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+@media
+/*phones*/
+
+(max-width: 767.98px) and (min-width: 576px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-rows: 64px 52px auto 52px;
+        grid-template-areas: "menu" "header" "main" "footer";
+        min-height: 100vh;
+    }
+    /*MENU*/
+    .menu {
+        grid-area: menu;
+        background-color: #f1f1f1;
+        border-bottom: 1px solid black;
+    }
+   
+    .menu-list-item {
+        float: left;
+    }
+    .menu-list-link {
+        display: block;
+        color: #000;
+        padding: 18px 16px;
+        text-decoration: none;
+        max-height: fit-content;
+        margin-top: 2px;
+    }
+
+    .active-menu {
+        background-color: aquamarine;
+        border-right: #000 1px solid;
+        border-left: black 1px solid;
+    }
+    .menu-list p {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    /*HEADER*/
+    .header {
+        grid-area: header;
+        background-color: dimgray;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    /*MAIN*/
+    .float-main {
+        grid-area: main;
+        background-color: ghostwhite;
+        text-align: center;
+    }
+    /*FOOTER*/
+    .footer {
+        grid-area: footer;
+        background-color: dimgray;
+        border-top: 1px solid black;
+        text-align: center;
+    }
+    .float-subject-one {
+        padding: 50px;
+        background: rgb(145, 255, 218);
+        color: #000;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .float-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .float-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .float-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .flex-subjects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-subject-one {
+        padding: 50px;
+        background-color: rgb(145, 255, 218);
+        color: #000;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .flex-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .flex-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .flex-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .grid-main {
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        display: grid;
+        grid-area: main;
+        background: #555;
+        color: #eee;
+        padding: 20px;
+        justify-items: center;
+        row-gap: 16px;
+    }
+    .grid-subject-one {
+        padding: 50px;
+        background: rgb(145, 255, 218);
+        color: #000;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .grid-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .grid-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .grid-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+
+/*END OF PHONES*/
+
+
+/*START OF TABLETS*/
+
+@media
+/*Tablets*/
+
+(min-width: 768px) and (max-width: 991.98px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-rows: 52px auto 52px;
+        grid-template-columns: 10% auto;
+        grid-template-areas: "menu header " "menu main  " "menu footer";
+        min-height: 100vh;
+    }
+    /*MENU/NAV*/
+    .menu {
+        background-color: #f1f1f1;
+        grid-area: menu;
+        border-right: black 1px solid;
+    }
+
+    .menu-list-link {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    .active-menu {
+        background-color: aquamarine;
+        border-top: #000 1px solid;
+        border-bottom: black 1px solid;
+    }
+    .menu-list p {
+        text-align: center;
+        margin-top: 1rem;
+    }
+ 
+    /*HEADER*/
+    .header {
+        grid-area: header;
+        background-color: dimgray;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    /*MAIN*/
+    .float-main {
+        grid-area: main;
+    }
+    /*FOOTER*/
+    .footer {
+        grid-area: footer;
+        background-color: dimgray;
+        border-top: 1px solid black;
+        text-align: center;
+    }
+    .float-subject-one {
+        padding: 50px;
+        background: rgb(58, 255, 189);
+        color: #000;
+        float: left;
+        width: 40%;
+    }
+    .float-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        float: right;
+        width: 40%;
+    }
+    .float-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        float: left;
+        width: 40%;
+    }
+    .float-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        float: right;
+        width: 40%;
+    }
+    .clear-fix {
+        clear: both;
+    }
+    .flex-subjects {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex-subject-one {
+        padding: 50px;
+        background: rgb(58, 255, 189);
+        color: #000;
+        width: 40%;
+    }
+    .flex-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 40%;
+        margin-left: auto;
+    }
+    .flex-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 40%;
+    }
+    .flex-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 40%;
+        margin-left: auto;
+    }
+    .grid-main {
+        display: grid;
+        grid-template-rows: 150px 150px auto;
+        grid-template-columns: 40% auto 40%;
+        grid-area: main;
+        background: #555;
+        color: #eee;
+        padding: 20px;
+    }
+    .grid-subject-one {
+        padding: 50px;
+        background: rgb(58, 255, 189);
+        color: #000;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .grid-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+    .grid-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .grid-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    .grid-placeholder-text {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-column-end: 4;
+    }
+    .main-text-grid {
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+}
+
+
+/*END OF TABLETS*/
+
+
+/*START OF DESKTOPS*/
+
+@media
+/*Desktops*/
+
+(min-width: 992px) and (max-width: 1199.999px) {
+    body {
+        font-size: 16px;
+        margin: 0;
+        display: grid;
+        grid-template-rows: 52px auto 52px;
+        grid-template-columns: 10% auto 70% auto;
+        grid-template-areas: 
+        "menu header header header"
+        "menu  .    main     .    "
+        "menu footer footer footer";
+        min-height: 100vh;
+    }
+    /*MENU/NAV*/
+    .menu {
+        background-color: #f1f1f1;
+        grid-area: menu;
+        border-right: black 1px solid;
+    }
+  
+    .menu-list-link {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+  
+    .active-menu {
+        background-color: aquamarine;
+        border-top: #000 1px solid;
+        border-bottom: black 1px solid;
+    }
+    .menu-list p {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .float-subject-one {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        float: left;
+        width: 40%;
+    }
+    .grid-main {
+        display: grid;
+        grid-template-rows: 150px 150px auto;
+        grid-template-columns: 40% auto 40%;
+        grid-area: main;
+        background: #555;
+        color: #eee;
+        padding: 20px;
+    }
+    /*HEADER*/
+    .header {
+        grid-area: header;
+        background-color: dimgray;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    /*MAIN*/
+    .float-main {
+        grid-area: main;
+    }
+    /*FOOTER*/
+    .footer {
+        grid-area: footer;
+        background-color: dimgray;
+        border-top: 1px solid black;
+        text-align: center;
+    }
+    .float-subject-one {
+        padding: 50px;
+        background: rgb(0, 204, 136);
+        color: #000;
+        float: left;
+        width: 40%;
+    }
+    .float-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        float: right;
+        width: 40%;
+    }
+    .float-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        float: left;
+        width: 40%;
+    }
+    .float-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        float: right;
+        width: 40%;
+    }
+    .clear-fix {
+        clear: both;
+    }
+    .flex-subjects {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex-subject-one {
+        padding: 50px;
+        background: rgb(0, 204, 136);
+        color: #000;
+        width: 40%;
+    }
+    .flex-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 40%;
+        margin-left: auto;
+    }
+    .flex-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 40%;
+    }
+    .flex-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 40%;
+        margin-left: auto;
+    }
+    .grid-main {
+        display: grid;
+        grid-template-rows: 150px 150px auto;
+        grid-template-columns: 40% auto 40%;
+        grid-area: main;
+        background: #555;
+        color: #eee;
+        padding: 20px;
+    }
+    .grid-subject-one {
+        padding: 50px;
+        background: rgb(0, 204, 136);
+        color: #000;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .grid-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+    .grid-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .grid-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    .main-text-grid {
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+}
+
+
+/*END OF DESKTOPS*/
+
+
+/* START OF DESKTOPS XL*/
+
+@media
+/*Desktops XL*/
+
+(min-width: 1200px) {
+    body {
+        font-size: 16px;
+        margin: 0;
+        display: grid;
+        grid-template-rows: 52px auto 52px;
+        grid-template-columns: 10% auto 70% auto;
+        grid-template-areas: "menu header header header" "menu  .   main        ." "menu footer footer footer";
+        min-height: 100vh;
+    }
+    /*MENU/NAV*/
+    .menu {
+        background-color: #f1f1f1;
+        grid-area: menu;
+        border-right: black 1px solid;
+    }
+
+    .menu-list-link {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    .active-menu {
+        background-color: aquamarine;
+        border-top: #000 1px solid;
+        border-bottom: black 1px solid;
+    }
+    .menu-list p {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    /*HEADER*/
+    .header {
+        grid-area: header;
+        background-color: dimgray;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    /*MAIN*/
+    .main {
+        grid-area: main;
+        background-color: #555;
+        ;
+    }
+    /*FOOTER*/
+    .footer {
+        grid-area: footer;
+        background-color: dimgray;
+        border-top: 1px solid black;
+        text-align: center
+    }
+    .float-subject-one {
+        padding: 50px;
+        background: rgb(0, 53, 35);
+        color: #000;
+        float: left;
+        width: 40%;
+    }
+    .float-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        float: right;
+        width: 40%;
+    }
+    .float-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        float: left;
+        width: 40%;
+    }
+    .float-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        float: right;
+        width: 40%;
+    }
+    .clear-fix {
+        clear: both;
+    }
+    .grid-main {
+        display: grid;
+        grid-template-rows: 140px 140px auto;
+        grid-template-columns: 40% auto 40%;
+        grid-area: main;
+        background: #555;
+        color: #eee;
+        padding: 20px;
+    }
+    .grid-subject-one {
+        padding: 50px;
+        background: rgb(0, 53, 35);
+        color: #000;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .grid-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+    .grid-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .grid-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    .grid-placeholder-text {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-column-end: 4;
+    }
+    .main-text-grid {
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+    .flex-subjects {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex-subject-one {
+        padding: 50px;
+        background: rgb(0, 53, 35);
+        color: #000;
+        width: 40%;
+    }
+    .flex-subject-two {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 40%;
+        margin-left: auto;
+    }
+    .flex-subject-three {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 40%;
+    }
+    .flex-subject-four {
+        padding: 50px;
+        background: aquamarine;
+        color: #000;
+        width: 40%;
+        margin-left: auto;
+    }
+}
+
+/*MASTER HEADER*/
+.menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.menu-list-link:hover {
+    background-color: #555;
+    color: white;
+}
+.float-header {
+    grid-area: header;
+    background: #333;
+    color: #eee;
+    text-align: center;
+}
+
+.float-main {
+    grid-area: main;
+    background: #555;
+    color: #eee;
+    padding: 20px;
+}
+
+.flex-main {
+    background: #555;
+}
+
+body {
+    background: linear-gradient(180deg, #25013a, rgb(2, 2, 49));
+}
+
+.main-text {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#image {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    object-fit: none;
+    /* max-height: 100%; */
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+}
+
+#image2 {
+    grid-row: 2/3;
+    grid-column: 4/5;
+    object-fit: none;
+    /* max-height: 100%; */
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+}
+
+
