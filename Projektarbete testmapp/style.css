@@ -452,7 +452,7 @@
     .grid-main {
         display: grid;
         grid-template-rows: 128px 128px auto;
-        grid-template-columns: 130px 31.65% 31.65% auto;
+        grid-template-columns: auto 31.65% 31.65% auto;
         grid-area: main;
         padding: 20px;
         column-gap: 1rem;
