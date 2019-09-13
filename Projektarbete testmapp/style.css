@@ -295,33 +295,16 @@
     .clear-fix {
         clear: both;
     }
-    .flex-subjects {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .flex-subject-one {
-        width: 40%;
-    }
-    .flex-subject-two {
-        width: 40%;
-        margin-left: auto;
-    }
-    .flex-subject-three {
-        width: 40%;
-    }
-    .flex-subject-four {
-        width: 40%;
-        margin-left: auto;
-    }
     .grid-main {
         display: grid;
-        grid-template-rows: 150px 150px auto;
-        grid-template-columns: 40% auto 40%;
+        grid-template-rows: 140px 140px auto;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
         grid-area: main;
         padding: 20px;
+        column-gap: 1rem;
     }
     .grid-subject-one {
-        grid-column-start: 1;
+        grid-column-start: 2;
         grid-row-start: 1;
     }
     .grid-subject-two {
@@ -329,21 +312,38 @@
         grid-row-start: 1;
     }
     .grid-subject-three {
-        grid-column-start: 1;
+        grid-column-start: 2;
         grid-row-start: 2;
     }
     .grid-subject-four {
         grid-column-start: 3;
         grid-row-start: 2;
     }
-    .grid-placeholder-text {
-        grid-column-start: 1;
-        grid-row-start: 3;
-        grid-column-end: 4;
-    }
     .main-text-grid {
-        grid-column: 1/4;
+        grid-column: 1/5;
         grid-row: 3;
+        max-width: 600px;
+    }
+    .flex-subjects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .flex-subject-one {
+        width: 31%;
+        margin-right:16px;
+    }
+    .flex-subject-two {
+        width: 31%;
+    
+    }
+    .flex-subject-three {
+        width: 31%;
+      margin-right:16px;
+    }
+    .flex-subject-four {
+        width: 31%;
+     
     }
 }
 
@@ -420,33 +420,16 @@
     .clear-fix {
         clear: both;
     }
-    .flex-subjects {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .flex-subject-one {
-        width: 40%;
-    }
-    .flex-subject-two {
-        width: 40%;
-        margin-left: auto;
-    }
-    .flex-subject-three {
-        width: 40%;
-    }
-    .flex-subject-four {
-        width: 40%;
-        margin-left: auto;
-    }
     .grid-main {
         display: grid;
-        grid-template-rows: 150px 150px auto;
-        grid-template-columns: 40% auto 40%;
+        grid-template-rows: 140px 140px auto;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
         grid-area: main;
         padding: 20px;
+        column-gap: 1rem;
     }
     .grid-subject-one {
-        grid-column-start: 1;
+        grid-column-start: 2;
         grid-row-start: 1;
     }
     .grid-subject-two {
@@ -454,7 +437,7 @@
         grid-row-start: 1;
     }
     .grid-subject-three {
-        grid-column-start: 1;
+        grid-column-start: 2;
         grid-row-start: 2;
     }
     .grid-subject-four {
@@ -462,8 +445,30 @@
         grid-row-start: 2;
     }
     .main-text-grid {
-        grid-column: 1/4;
+        grid-column: 1/5;
         grid-row: 3;
+        max-width: 600px;
+    }
+    .flex-subjects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .flex-subject-one {
+        width: 31%;
+        margin-right:16px;
+    }
+    .flex-subject-two {
+        width: 31%;
+    
+    }
+    .flex-subject-three {
+        width: 31%;
+      margin-right:16px;
+    }
+    .flex-subject-four {
+        width: 31%;
+     
     }
 }
 
@@ -556,26 +561,30 @@
         grid-row-start: 2;
     }
     .main-text-grid {
-        grid-column: 2/4;
+        grid-column: 1/5;
         grid-row: 3;
+        max-width: 600px;
     }
     .flex-subjects {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .flex-subject-one {
-        width: 40%;
+        width: 31%;
+        margin-right:16px;
     }
     .flex-subject-two {
-        width: 40%;
-        margin-left: auto;
+        width: 31%;
+    
     }
     .flex-subject-three {
-        width: 40%;
+        width: 31%;
+      margin-right:16px;
     }
     .flex-subject-four {
-        width: 40%;
-        margin-left: auto;
+        width: 31%;
+     
     }
 }
 
@@ -614,7 +623,6 @@
 }
 body {
     background: linear-gradient(180deg, rgb(70, 56, 12), rgb(0, 0, 0));
-    
 }
 
 .main-text {
@@ -693,3 +701,4 @@ color: rgb(212, 166, 14);
     font-weight: 600;
     text-align: center;
 }
+
