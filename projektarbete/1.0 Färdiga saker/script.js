@@ -1,5 +1,5 @@
 //Kollar width på sidan och ändrar h1 vid valda breakpoints
-let mqli = [
+const mediaQueryList = [
     window.matchMedia("(min-width: 1200px)"),
     window.matchMedia("(min-width: 992px) and (max-width: 1199.999px)"),
     window.matchMedia("(min-width: 768px) and (max-width: 991.999px)"),
@@ -8,28 +8,28 @@ let mqli = [
 ]
 
 function responsiveHeader() {
-    if (mqli[0].matches) {
+    if (mediaQueryList[0].matches) {
         let headerEl = document.getElementById("h1");
-        headerEl.innerHTML = "> 1200px";
+        headerEl.innerHTML = "Desktop > 1200px";
     }
-    if (mqli[1].matches) {
+    if (mediaQueryList[1].matches) {
         let headerEl = document.getElementById("h1");
-        headerEl.innerHTML = "992-1200px";
+        headerEl.innerHTML = "Desktop 992-1200px";
     }
-    if (mqli[2].matches) {
+    if (mediaQueryList[2].matches) {
         let headerEl = document.getElementById("h1");
-        headerEl.innerHTML = "768-992px";
+        headerEl.innerHTML = "Tablet 768-992px";
     }
-    if (mqli[3].matches) {
+    if (mediaQueryList[3].matches) {
         let headerEl = document.getElementById("h1");
-        headerEl.innerHTML = "576-768p";
+        headerEl.innerHTML = "Mobile 576-768p";
     }
-    if (mqli[4].matches) {
+    if (mediaQueryList[4].matches) {
         let headerEl = document.getElementById("h1");
-        headerEl.innerHTML = "< 576px";
+        headerEl.innerHTML = "Mobile < 576px";
     }
 }
-for (let i = 0; i < mqli.length; i++) {
-    responsiveHeader(mqli[i])
-    mqli[i].addListener(responsiveHeader) // Känner av när width ändras
+for (let i = 0; i < mediaQueryList.length; i++) {
+    responsiveHeader(mediaQueryList[i])
+    mediaQueryList[i].addListener(responsiveHeader) // Känner av när width ändras
 }
