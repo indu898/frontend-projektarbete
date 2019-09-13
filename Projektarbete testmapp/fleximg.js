@@ -1,8 +1,8 @@
 // Loads and writes  OR deletes two images with below properties 
 // if the width property is or is not true
 
-function addRemoveImage(x) {
-    if (x.matches) {
+function addRemoveImage(y) {
+    if (mql.matches) {
         let myImage3 = new Image
         myImage3.src = "images/flexboy.png"
         document.id = body2.appendChild(myImage3)
@@ -18,6 +18,6 @@ function addRemoveImage(x) {
         try { document.getElementById("image2").remove(); } catch (e) { }
     }
 }
-var x = window.matchMedia("(min-width: 992px)")
-addRemoveImage(x) // Call listener function at run time
-x.addListener(addRemoveImage) // Attach listener function on state changes
+var mql = window.matchMedia("(min-width: 992px)")
+addRemoveImage(mql) // Call listener function at run time
+mql.addListener(addRemoveImage) // Attach listener function on state changes
