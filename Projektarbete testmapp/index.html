@@ -37,22 +37,22 @@
         <p class="float-subject-three subject-style">Problem</p>
         <p class="float-subject-four  subject-style">Illustrera</p>
         <div class="clear-fix"></div>
-        <p class="main-text">Float introducerades i Netscape 1.1 år 2002. Det togs fram för att kunna för att flyta text
-            runt en bild. Float i samverkan med div-boxar börjades användas för att skapa sin layout. Innan float
-            använda man tables. När designers insåg möjligheterna
-            med floats började man använda det för att bygga hela sin sidas layout. Det var aldrig ändamålet men det
-            funkade bra under långt tid.</p>
+        <p class="main-text">Float introducerades i Netscape 1.1 år 2002 med syftet att "flyta" en text runt ett annat
+            element, t.ex. en bild.
+        </p>
+        <p class="main-text">
+            Float i samverkan med div-boxar fungerade dock bättre för layout än de tidigare
+            verktygen när man använde tables som var ännu krångligare. Float var aldrig tänkt att användas för sidlayout
+            men det var nu det bästa verktyget som fanns tillgängligt.
+        </p>
 
-        <p class="main-text">Problemet med floats är att man måste använda sig av extra markup i sin html och extra kod
-            i din css om du vill floata saker efter varandra. En bild som ligger floatad med text kan sticka ut ur sin
-            container. Det är inte en bugg. Det är så det
-            var tänkt. Att folk använde float som layoutverktyg är något som bara hände.</p>
-
-        <p class="main-text"> Så tricket är att skapa boxar med fast bredd floata dom som man vill. Om man vill floata
-            mer saker efteråt så läggar man till en 'div class=clear'-box och ger stylar den med en “clearfix”. Man kan
-            också sätta bredden på sina floatade objekt på
-            över 50% vilket tvingar dom att hamna under varandra. Att använda floats som sitt huvudsakliga layoutverktyg
-            skapar onödig kod i markup och css. Float för layout är ett hack.</p>
+        <p class="main-text">
+            Problemet med float när det används för sidlayout är att man måste använda sig av extra markup i html och
+            extra kod i CSS för att få saker att hamna där man vill.
+            Clearfix behövs för att bryta floateffekten nedåt på sidan så att inget content kryper uppåt.
+            En clearfix är en tom div med CSS-stylingen "clear-both".
+            Clearfix är bara ett av många så kallade "hacks" som användes för att kunna använda float som layoutverktyg.
+        </p>
     </main>
     <div class="aside"></div>
     <div class="aside2"></div>
