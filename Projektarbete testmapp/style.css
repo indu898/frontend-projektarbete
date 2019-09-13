@@ -352,7 +352,8 @@
     .main-text-grid {
         grid-column: 1/5;
         grid-row: 3;
-        max-width: 600px;
+        margin: auto;
+        max-width:600px;
     }
     .flex-subjects {
         display: flex;
@@ -480,7 +481,8 @@
     .main-text-grid {
         grid-column: 1/5;
         grid-row: 3;
-        max-width: 600px;
+        margin: auto;
+        max-width:600px;
     }
     .flex-subjects {
         display: flex;
@@ -613,7 +615,8 @@
     .main-text-grid {
         grid-column: 1/5;
         grid-row: 3;
-        max-width: 600px;
+        margin: auto;
+        max-width:600px;
     }
     .flex-subjects {
         display: flex;
