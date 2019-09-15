@@ -1,45 +1,66 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flex</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Flex</title>
 </head>
 
-<body>
-    <nav class="flex-nav">
-        <ul>
-            <li><a href="index.html">Float</a></li>
-            <li><a href="flex.html">Flex</a></li>
-            <li><a href="grid.html">Grid</a></li>
+<body id="body2">
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu-list-item">
+                <p class="menu-header"><strong>Float till Grid</strong></p>
+            </li>
+            <li class="menu-list-item"><a class="menu-list-link" href="index.html">Float</a></li>
+            <li class="menu-list-item"><a class="menu-list-link active-menu" href="flex.html">Flex</a></li>
+            <li class="menu-list-item"><a class="menu-list-link" href="grid.html">Grid</a></li>
         </ul>
     </nav>
-    <header class="flex-header">
-        <h1 id="h1">Flex</h1>
+    <header class="header">
+        <h1 id="h1">Our header</h1>
     </header>
-    <main class="flex-main">
-        <p class="flex-subject-one">Ämne 1</p>
-        <p class="flex-subject-two">Ämne 2</p>
-        <p class="flex-subject-three">Ämne 3</p>
-        <p class="flex-subject-four">Ämne 4</p>
-        <p>EXEMPELTEXT Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorem expedita impedit odit
-            architecto qui ut vitae deleniti, explicabo dolor iste fugit quibusdam consequuntur? Voluptate eaque dolor
-            eum earum accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe illo rerum
-            eligendi? Error voluptatum placeat modi, a laboriosam dicta recusandae aspernatur eveniet doloribus ex rem
-            labore vel harum et!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolore facilis veritatis saepe, rerum, non
-            dolorum enim laudantium vero culpa, unde quam aliquam magni officia dolor sint illum. Quae, exercitationem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ipsam. Distinctio ab quaerat fugit
-            possimus, sint exercitationem iusto corporis non voluptatem asperiores dolorum totam minus ipsa molestiae
-            nemo, est incidunt?</p>
+    <main class="float-main main">
+        <div class="flex-subjects">
+            <p class="flex-subject-one subject-style">2009-2013</p>
+            <p class="flex-subject-two subject-style">1-D</p>
+        </div>
+        <div class="flex-subjects">
+            <p class="flex-subject-three subject-style">C. out</p>
+            <p class="flex-subject-four subject-style">Grid</p>
+        </div>
+
+        <p class="main-text">Flexbox introducerades 2009 och är baserat på kod från firefox UI. Det släpptes i
+            sin
+            nuvarande form 2013 men små ändringar har skett. Det är designat för att hantera endimensionella
+            layouts.
+        </p>
+
+        <p class="main-text">
+            Endimensionellt innebär att du antingen jobbar med rader eller med kolumner.
+            Direkta barn i en flex-container blir flex items. By default sätts flex-containerns mått i ett led att passa
+            ditt största flex item och resterande flex items kommer ta upp lika mycket plats i samma led.
+        </p>
+
+        <p class="main-text">
+            I flexbox bygger du din layout runt ditt content som brukar kallas för en content out-modell.
+            Grid däremot brukar kallas för en layout in-modell dvs att layout kommer först och content sen.
+        </p>
     </main>
-    <footer class="flex-footer">
-        <p>Temporär footer</p>
+    <div class="aside"></div>
+    <div class="aside2"></div>
+    <footer class="footer">
+        Kick Ass Footer
     </footer>
+    <script src="fleximg.js"></script>
     <script src="script.js"></script>
 </body>
 

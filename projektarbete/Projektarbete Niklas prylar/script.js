@@ -1,4 +1,5 @@
-let mqls = [
+//Kollar width på sidan och ändrar h1 vid valda breakpoints
+const mediaQueryList = [
     window.matchMedia("(min-width: 1200px)"),
     window.matchMedia("(min-width: 992px) and (max-width: 1199.999px)"),
     window.matchMedia("(min-width: 768px) and (max-width: 991.999px)"),
@@ -6,52 +7,29 @@ let mqls = [
     window.matchMedia("(max-width: 575.999px)")
 ]
 
-function mediaqueryresponse(mql) {
-    if (mqls[0].matches) {
-        let element = document.getElementById("h1");
-        element.innerHTML = "> 1200px";
+function responsiveHeader() {
+    if (mediaQueryList[0].matches) {
+        let headerEl = document.getElementById("h1");
+        headerEl.innerHTML = "X large > 1200px";
     }
-    if (mqls[1].matches) {
-        let element = document.getElementById("h1");
-        element.innerHTML = "992-1200px";
+    if (mediaQueryList[1].matches) {
+        let headerEl = document.getElementById("h1");
+        headerEl.innerHTML = "Large 992-1200px";
     }
-    if (mqls[2].matches) {
-        let element = document.getElementById("h1");
-        element.innerHTML = "768-992px";
+    if (mediaQueryList[2].matches) {
+        let headerEl = document.getElementById("h1");
+        headerEl.innerHTML = "Medium 768-992px";
     }
-    if (mqls[3].matches) {
-        let element = document.getElementById("h1");
-        element.innerHTML = "576-768p";
+    if (mediaQueryList[3].matches) {
+        let headerEl = document.getElementById("h1");
+        headerEl.innerHTML = "Small 576-768p";
     }
-    if (mqls[4].matches) {
-        let element = document.getElementById("h1");
-        element.innerHTML = "< 576px";
-    }
-}
-for (let i = 0; i < mqls.length; i++) {
-    mediaqueryresponse(mqls[i]) // call listener function explicitly at run time
-    mqls[i].addListener(mediaqueryresponse) // attach listener function to listen in on state changes
-}
-
-function myFunction(x) {
-    if (x.matches) {
-        let myImage = new Image(100, 100)
-        myImage.src = "testbild.JPG"
-        document.id = bajs.appendChild(myImage)
-        myImage.setAttribute("id", "fittbild")
-    }
-    else {
-        try { document.getElementById("fittbild").remove(); }
-        catch (e) {
-        }
+    if (mediaQueryList[4].matches) {
+        let headerEl = document.getElementById("h1");
+        headerEl.innerHTML = "X small < 576px";
     }
 }
-
-
-var x = window.matchMedia("(min-width: 1200px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
-
-
-
-
+for (let i = 0; i < mediaQueryList.length; i++) {
+    responsiveHeader(mediaQueryList[i])
+    mediaQueryList[i].addListener(responsiveHeader) // Känner av när width ändras
+}

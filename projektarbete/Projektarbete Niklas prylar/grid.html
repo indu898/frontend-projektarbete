@@ -1,45 +1,57 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Grid</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Grid</title>
 </head>
 
-<body>
-    <nav class="grid-nav">
-        <ul>
-            <li><a href="index.html">Float</a></li>
-            <li><a href="flex.html">Flex</a></li>
-            <li><a href="grid.html">Grid</a></li>
+<body class="body3">
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu-list-item">
+                <p class="menu-header"><strong>Float till Grid</strong></p>
+            </li>
+            <li class="menu-list-item"><a class="menu-list-link" href="index.html">Float</a></li>
+            <li class="menu-list-item"><a class="menu-list-link" href="flex.html">Flex</a></li>
+            <li class="menu-list-item"><a class="menu-list-link active-menu" href="grid.html">Grid</a></li>
         </ul>
     </nav>
-    <header class="grid-header">
-        <h1 id="h1">Grid</h1>
+    <header class="header">
+        <h1 id="h1">Our header</h1>
     </header>
-    <main class="grid-main">
-        <p class="grid-subject-one">Ämne 1</p>
-        <p class="grid-subject-two">Ämne 2</p>
-        <p class="grid-subject-three">Ämne 3</p>
-        <p class="grid-subject-four">Ämne 4</p>
-        <p class="grid-placeholder-text">EXEMPELTEXT Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            dolorem expedita impedit odit
-            architecto qui ut vitae deleniti, explicabo dolor iste fugit quibusdam consequuntur? Voluptate eaque dolor
-            eum earum accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe illo rerum
-            eligendi? Error voluptatum placeat modi, a laboriosam dicta recusandae aspernatur eveniet doloribus ex rem
-            labore vel harum et!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolore facilis veritatis saepe, rerum, non
-            dolorum enim laudantium vero culpa, unde quam aliquam magni officia dolor sint illum. Quae, exercitationem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ipsam. Distinctio ab quaerat fugit
-            possimus, sint exercitationem iusto corporis non voluptatem asperiores dolorum totam minus ipsa molestiae
-            nemo, est incidunt?</p>
+    <main class="main grid-main">
+        <p class="grid-subject-one subject-style">2005-2017</p>
+        <p class="grid-subject-two subject-style">2-D</p>
+        <p class="grid-subject-three subject-style">Precist</p>
+        <p class="grid-subject-four subject-style">Illustrera</p>
+        <p class="main-text-grid main-text">
+            Gridkonceptet var påtänkt sedan långt tillbaka och redan 2005 fanns en “Advanced layout module”. Under
+            2010 gick de fyra största browser-utvecklarna ihop för att utveckla en grid-standard. Grid släpptes och
+            fick stöd av alla dessa browsers år 2017.
+
+            <br><br>
+            Grid är det första riktiga tvådimensionella layoutverktyget. I gridsystemet kan man enkelt jobba med
+            både
+            kolumner och rader samtidigt vilket gör det lättare med mer komplex layout. Sidlayouten byggs först och
+            fylls sedan med content, dvs layout in.
+            <br><br>
+            Du kan gå från layoutskiss till färdig sidlayout med minimal kod på kort
+            tid.</p>
+        </div>
     </main>
-    <footer class="float-footer">
-        <p>Temporär footer</p>
+    <div class="aside"></div>
+    <div class="aside2"></div>
+    <footer class="footer">
+        Kick Ass Footer
     </footer>
     <script src="script.js"></script>
 </body>
