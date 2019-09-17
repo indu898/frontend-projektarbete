@@ -13,3 +13,10 @@ https://webplatform.github.io/docs/tutorials/layout_fundamentals/
 https://annairish.github.io/historicizing/history
 https://dev.to/willamesoares/why-you-should-already-be-using-css-grid-pch
 https://www.merixstudio.com/blog/benefits-css-grid-layout/
+
+https://www.sitepoint.com/css-layouts-floats-flexbox-grid/
+https://medium.com/flexbox-and-grids/css-flexbox-grid-layout-how-to-approach-css-layouts-in-2017-and-beyond-685deef03e6c
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout
+https://www.smashingmagazine.com/2017/11/css-grid-supporting-browsers-without-grid/
+w3schools.com
+http://javascriptkit.com/javatutors/matchmediamultiple.shtml
